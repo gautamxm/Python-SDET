@@ -1,0 +1,1 @@
+# 8.	Count the Occurrence of Items in a List and Store in a Dictionary
