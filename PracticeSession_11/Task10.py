@@ -8,6 +8,6 @@ for i in arr1:
         second = large
         large = i
     elif large > i > second:
-        second = i
+        second = i 
 print(second)
 
