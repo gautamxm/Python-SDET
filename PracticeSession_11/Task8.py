@@ -6,4 +6,4 @@ newarr = []
 for i in arr:
     if i not in newarr:
         newarr.append(i)
-print(newarr)
+print(newarr) 
