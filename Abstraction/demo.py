@@ -73,3 +73,35 @@ from abc import ABC, abstractmethod
 # obj = protected()
 # obj.display()
 # obj.display1()
+
+
+
+# Getter and Setter Method 
+class student:
+    def __init__(self,name,age):
+        self.__name = name
+        self.__age = age
+    #getter
+    @property
+    def name(self):
+        return self.__name
+    @name.setter
+    def name(self,new_name):
+        self.__name = new_name
+
+    @property
+    def age(self):
+        return self.__age
+    @age.setter
+    def age(self,new_age):
+        if new_age > 0:
+            self.__age = new_age
+        else: print("age cant be -ve")
+    
+obj = student("Gautam",23)
+print(obj.name)
+print(obj.age)
+obj.name = "Lucifer"
+obj.age = 23
+print(obj.name)
+print(obj.age)
